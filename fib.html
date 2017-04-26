@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Fibonacci Series</title>
+<script language="javascript">
+var a=0,b=1,c,count;
+n=window.prompt("Enter the value of n to generate fibonacci series");
+var num=parseInt(n);
+document.writeln("<h1>Fibonacci Series for "+num+" terms</h1><br/>");
+count=1;
+document.writeln(+a+"<br/>"+b);
+while(count<=num-2)
+{
+ c=a+b;
+ document.write("<br/>"+c+"<br/>");
+ a=b;
+ b=c;
+ ++count;
+}
+</script>
+</head>
+<body>
+<p>Click Refresh to find fibonacci series again</p>
+</body>
+</html>
