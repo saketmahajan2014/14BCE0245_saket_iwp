@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+       
+ <title>Shooter</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="jscript.js"></script>
+</head>
+   
+<body  style="color:#CEF6F5;">
+<div id="score">Score: 0 </div> 
+<div id="Time">Time: </div>
+<script>
+var worker = new Worker('worker.js');
+   worker.onmessage = function (event) {
+     document.getElementById('Time').textContent ="Time:"+ event.data;
+   };
+</script> 
+
+   
+ <p id="life">Life:</p>
+    
+
+<div id="lifeRed"></div>
+
+   <div id="lifeGreen"></div>  
+   
+<img id="target" src=" http://orig08.deviantart.net/4a5a/f/2012/193/e/f/circulo_png_by_josefabellalovers-d570rfx.png"></img>
+   
+ <img id="me" src=" https://i2.wp.com/rocketdock.com/images/screenshots/Another-UFO-icon.png "></img>
+   
+ <img id="bullet" src=" http://2.bp.blogspot.com/-9sEX_jbqoY4/T03OKkvUfpI/AAAAAAAAHiA/y8ZQ1OFdfOU/s1600/4557.png"></img>
+   
+  <img id="explode" src=" http://rs651.pbsrc.com/albums/uu236/416o/explosion.gif~c200"></img>
+   
+     <button id="left" onclick="MoveLeft()"> < </button>
+    
+<button id="right" onclick="MoveRight()"> >
+ </button>
+   
+ <img id="shootL" onclick="Shoot()" src=" https://lh3.googleusercontent.com/1HErzuVmVTX1cdCnwNmdFDsdXfRRkoIHys35sNqwBYQ1BICOnHBGNOnayUc23Rgxtls1=w300 "></img>
+  
+  <img id="shootR" onclick="Shoot()" src=" https://lh3.googleusercontent.com/1HErzuVmVTX1cdCnwNmdFDsdXfRRkoIHys35sNqwBYQ1BICOnHBGNOnayUc23Rgxtls1=w300 "></img>
+ 
+     <button id="custom" onclick="Custom()">Customize</button>
+     <table id="options" border="1px" display="none">
+     
+<tr>
+	<td colspan="3" align="center">Choose your spaceship</td>
+</tr>
+  
+   <tr>
+    
+ <td><img src=" https://i2.wp.com/rocketdock.com/images/screenshots/Another-UFO-icon.png " width="100px"></img></td>
+    
+ <td><img src=" http://1.bp.blogspot.com/-ZFVNAKdhZEo/Uhue-jFl7nI/AAAAAAAAA3A/iflN3Xh31xY/s1600/RD2.png " width="90px" ></img></td>
+    
+ <td><img src=" http://dribbble.s3.amazonaws.com/users/15069/screenshots/475408/alien_ship_2_export.png " width="90px" ></img></td>
+   
+  </tr>
+   
+ <tr>
+   
+ <form>
+    
+<td><input type="radio" name="player" id="PA" value="PA"></input></td>
+ 
+   <td><input type="radio" name="player" id="PB" value="PB"></input></td>
+  
+  <td><input type="radio" name="player" id="PC" value="PC"></input></td>
+    
+</tr>
+
+    <tr><td colspan="3" align="center">Choose your target</td></tr>
+  
+  <tr>
+    
+<td><img src=" http://orig08.deviantart.net/4a5a/f/2012/193/e/f/circulo_png_by_josefabellalovers-d570rfx.png " width="60px"></img></td>
+    
+ <td><img src=" http://www.metrolibrary.org/sites/default/files/Death-Star-1st-icon.png " width="50px" ></img></td>
+     
+<td><img src=" https://francescosegala.files.wordpress.com/2014/05/enemy1.png " width="70px" ></img></td>
+  </form>   
+</tr>
+  
+ <tr>
+  
+  <form>
+    <td><input type="radio" name="target" id="TA" value="TA"></input></td>
+  
+  <td><input type="radio" name="target" id="TB" value="TB"></input></td>
+    
+<td><input type="radio" name="target" id="TC" value="TC"></input></td>
+ </form>
+   </tr>
+     
+</table>
+  
+  
+  </body>
+
+</html>

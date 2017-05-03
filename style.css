@@ -1,0 +1,151 @@
+body {
+    background-image:url(" http://wallpapercave.com/wp/KdgcJG4.jpg ");
+    background-size:350%;
+    background-position:center;
+    font-family:Times;
+    font-color:"#CEF6F5";
+}
+#target
+{
+   top:49px;
+   width:60px;
+   position:absolute;
+   animation-name:movetarget;
+   animation-duration:5s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate;
+   -webkit-animation-duration:5s;
+   -webkit-animation-name:movetarget;
+   -webkit-animation-iteration-count:infinite;
+   -webkit-animation-direction:alternate;
+}
+#me
+{
+width:100px;
+height:45px;
+position:absolute;
+top:350px;
+left:100px;
+}
+#bullet
+{
+   width:50px;
+   position:absolute;
+   top:330px;
+   left:125px;
+   visibility:hidden;
+}
+@keyframes movetarget
+{
+   from{margin-left:10%;} 
+   to{margin-left:70%;}
+}
+@-webkit-keyframes movetarget
+{
+ from{margin-left:10%;} 
+ to{margin-left:70%;} 
+}
+#score
+{
+  font-size:13px;
+  width:250px;
+  border-width:2px;
+  border-style:dotted;
+  border-color:white;
+  padding-left:50px;
+  position:absolute;
+  top:0px;
+}
+#Time
+{
+  font-size:13px;
+  width:250px;
+  border-width:2px;
+  border-style:dotted;
+  border-color:white;
+  padding-left:0px;
+  position:absolute;
+  top:0px;
+}
+
+#explode
+{
+ top:49px;
+   width:60px;
+   position:absolute;
+   animation-name:movetarget;
+   animation-duration:5s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate;
+   -webkit-animation-duration:5s;
+   -webkit-animation-name:movetarget;
+   -webkit-animation-iteration-count:infinite;
+   -webkit-animation-direction:alternate;
+   visibility:hidden;
+}
+ #left
+ {position:absolute;
+    top:360px; 
+    left:15px;
+  width:40px;
+  height:40px;
+  border-radius:20px; }
+#shootL
+{
+   height:50px;
+   position:absolute;
+   top:300px;
+   left:10px;
+}    
+#right
+{position:absolute;
+top:360px;
+left:265px;
+width:40px;
+height:40px;
+border-radius:20px;}
+#shootR
+{
+   height:50px;
+   position:absolute;
+   top:300px;
+   left:260px;
+}
+#lifeGreen
+{ height:10px;
+  width:100px;
+  background-color:green;
+  position:absolute;
+  top:6px;
+  left:200px;
+}
+#lifeRed
+{ height:10px;
+  width:100px;
+  background-color:red;
+  position:absolute;
+  top:6px;
+  left:200px;
+}
+#life
+{
+   position:absolute;
+   font-size:13px;
+   top:-12px;
+   left:160px;
+}
+#options
+{  background-image:url(" http://wallpapercave.com/wp/KdgcJG4.jpg ");
+   position:absolute; 
+    top:50px;
+    left:10px;
+   height:350px;
+   display:none;
+}
+#custom
+{
+   position:absolute; 
+   top:20px;
+   background-color:transparent;
+   color:#CEF6F5;
+}
